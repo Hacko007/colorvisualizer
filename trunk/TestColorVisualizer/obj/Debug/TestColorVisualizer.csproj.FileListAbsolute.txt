@@ -1,9 +1,0 @@
-C:\Documents and Settings\emithac\My Documents\Visual Studio 2008\Projects\ColorVisualizer\TestColorVisualizer\obj\Debug\ResolveAssemblyReference.cache
-C:\Documents and Settings\emithac\My Documents\Visual Studio 2008\Projects\ColorVisualizer\TestColorVisualizer\bin\Debug\TestColorVisualizer.exe
-C:\Documents and Settings\emithac\My Documents\Visual Studio 2008\Projects\ColorVisualizer\TestColorVisualizer\bin\Debug\TestColorVisualizer.pdb
-C:\Documents and Settings\emithac\My Documents\Visual Studio 2008\Projects\ColorVisualizer\TestColorVisualizer\bin\Debug\ColorVisualizer.dll
-C:\Documents and Settings\emithac\My Documents\Visual Studio 2008\Projects\ColorVisualizer\TestColorVisualizer\bin\Debug\ColorVisualizer.pdb
-C:\Documents and Settings\emithac\My Documents\Visual Studio 2008\Projects\ColorVisualizer\TestColorVisualizer\obj\Debug\TestColorVisualizer.exe
-C:\Documents and Settings\emithac\My Documents\Visual Studio 2008\Projects\ColorVisualizer\TestColorVisualizer\obj\Debug\TestColorVisualizer.pdb
-c:\Users\DEV\ColorVisualizer\TestColorVisualizer\obj\Debug\TestColorVisualizer.exe
-c:\Users\DEV\ColorVisualizer\TestColorVisualizer\obj\Debug\TestColorVisualizer.pdb
