@@ -1,0 +1,7 @@
+C:\Documents and Settings\emithac\My Documents\Visual Studio 2008\Projects\ColorVisualizer\ColorVisualizer\bin\Debug\ColorVisualizer.dll
+C:\Documents and Settings\emithac\My Documents\Visual Studio 2008\Projects\ColorVisualizer\ColorVisualizer\bin\Debug\ColorVisualizer.pdb
+C:\Documents and Settings\emithac\My Documents\Visual Studio 2008\Projects\ColorVisualizer\ColorVisualizer\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\emithac\My Documents\Visual Studio 2008\Projects\ColorVisualizer\ColorVisualizer\obj\Debug\ColorVisualizer.ColorForm.resources
+C:\Documents and Settings\emithac\My Documents\Visual Studio 2008\Projects\ColorVisualizer\ColorVisualizer\obj\Debug\ColorVisualizer.csproj.GenerateResource.Cache
+C:\Documents and Settings\emithac\My Documents\Visual Studio 2008\Projects\ColorVisualizer\ColorVisualizer\obj\Debug\ColorVisualizer.dll
+C:\Documents and Settings\emithac\My Documents\Visual Studio 2008\Projects\ColorVisualizer\ColorVisualizer\obj\Debug\ColorVisualizer.pdb
