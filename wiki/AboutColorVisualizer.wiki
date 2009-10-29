@@ -1,4 +1,5 @@
 #summary About Color Visualizer
+#labels Featured,Phase-Support
 
 =Visual studio debug visualizers: Color Visualizer=
 
