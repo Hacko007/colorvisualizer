@@ -5,14 +5,13 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{459682C6-1D9B-461B-ADB1-21F078AEC1C1}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{75B70CFA-0BE6-48AC-9A50-B05019BF2EDE}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TestColorVisualizer</RootNamespace>
-    <AssemblyName>TestColorVisualizer</AssemblyName>
+    <RootNamespace>BitmapVisualizer</RootNamespace>
+    <AssemblyName>BitmapVisualizer</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <StartupObject>TestColorVisualizer.TestColorVisualizer</StartupObject>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -38,6 +37,7 @@
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -48,18 +48,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TestColorVisualizer.cs" />
+    <Compile Include="BitmapForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BitmapForm.Designer.cs">
+      <DependentUpon>BitmapForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BitmapVisualizer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BitmapVisualizer\BitmapVisualizer.csproj">
-      <Project>{75B70CFA-0BE6-48AC-9A50-B05019BF2EDE}</Project>
-      <Name>BitmapVisualizer</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ColorVisualizer\ColorVisualizer.csproj">
-      <Project>{0EBAEC2C-F213-4517-B075-D2298D3A68DD}</Project>
-      <Name>ColorVisualizer</Name>
-    </ProjectReference>
+    <EmbeddedResource Include="BitmapForm.resx">
+      <DependentUpon>BitmapForm.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
