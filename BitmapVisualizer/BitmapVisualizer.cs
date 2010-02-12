@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Microsoft.VisualStudio.DebuggerVisualizers;
-using System.Windows.Forms;
 using System.Drawing;
+using System.Windows.Forms;
+using Microsoft.VisualStudio.DebuggerVisualizers;
 
 [assembly: System.Diagnostics.DebuggerVisualizer(
     typeof(BitmapVisualizer.BitmapVisualizer),
