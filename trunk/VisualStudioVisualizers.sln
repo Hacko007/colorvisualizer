@@ -1,11 +1,13 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorVisualizer", "ColorVisualizer\ColorVisualizer.csproj", "{0EBAEC2C-F213-4517-B075-D2298D3A68DD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestColorVisualizer", "TestColorVisualizer\TestColorVisualizer.csproj", "{459682C6-1D9B-461B-ADB1-21F078AEC1C1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitmapVisualizer", "BitmapVisualizer\BitmapVisualizer.csproj", "{75B70CFA-0BE6-48AC-9A50-B05019BF2EDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataSetVisualizer", "DataSetVisualizer\DataSetVisualizer.csproj", "{02B37562-BE88-43BB-BBA8-86ACC1AE4DDE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +27,10 @@ Global
 		{75B70CFA-0BE6-48AC-9A50-B05019BF2EDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75B70CFA-0BE6-48AC-9A50-B05019BF2EDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75B70CFA-0BE6-48AC-9A50-B05019BF2EDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02B37562-BE88-43BB-BBA8-86ACC1AE4DDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02B37562-BE88-43BB-BBA8-86ACC1AE4DDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02B37562-BE88-43BB-BBA8-86ACC1AE4DDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02B37562-BE88-43BB-BBA8-86ACC1AE4DDE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
