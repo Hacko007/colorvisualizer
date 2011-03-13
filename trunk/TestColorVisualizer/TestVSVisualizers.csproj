@@ -3,28 +3,21 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.21022</ProductVersion>
+    <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{0EBAEC2C-F213-4517-B075-D2298D3A68DD}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{459682C6-1D9B-461B-ADB1-21F078AEC1C1}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Hackovic.VisualStudio</RootNamespace>
-    <AssemblyName>ColorVisualizer</AssemblyName>
+    <AssemblyName>TestColorVisualizer</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <StartupObject>Hackovic.VisualStudio.TestVSVisualizer</StartupObject>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>3.5</OldToolsVersion>
-    <SccProjectName>
-    </SccProjectName>
-    <SccLocalPath>
-    </SccLocalPath>
-    <SccAuxPath>
-    </SccAuxPath>
-    <SccProvider>
-    </SccProvider>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -59,12 +52,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
-  </PropertyGroup>
-  <PropertyGroup>
-    <AssemblyOriginatorKeyFile>ColorVisualizer.snk</AssemblyOriginatorKeyFile>
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.VisualStudio.DebuggerVisualizers, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
@@ -72,7 +59,6 @@
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -83,19 +69,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ColorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ColorForm.Designer.cs">
-      <DependentUpon>ColorForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ColorVisualizer.cs" />
+    <Compile Include="TestVSVisualizer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="ColorForm.resx">
-      <DependentUpon>ColorForm.cs</DependentUpon>
-    </EmbeddedResource>
+    <ProjectReference Include="..\BitmapVisualizer\BitmapVisualizer.csproj">
+      <Project>{75B70CFA-0BE6-48AC-9A50-B05019BF2EDE}</Project>
+      <Name>BitmapVisualizer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ColorVisualizer\ColorVisualizer.csproj">
+      <Project>{0EBAEC2C-F213-4517-B075-D2298D3A68DD}</Project>
+      <Name>ColorVisualizer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataSetVisualizer\DataSetVisualizer.csproj">
+      <Project>{02B37562-BE88-43BB-BBA8-86ACC1AE4DDE}</Project>
+      <Name>DataSetVisualizer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NumberVisualizer\NumberVisualizer.csproj">
+      <Project>{0C60BB08-0A1F-49FE-BC6C-C0354B09F632}</Project>
+      <Name>NumberVisualizer</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
@@ -115,7 +108,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ColorVisualizer.snk" />
+    <None Include="app.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

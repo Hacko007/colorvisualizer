@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{02B37562-BE88-43BB-BBA8-86ACC1AE4DDE}</ProjectGuid>
+    <ProjectGuid>{0C60BB08-0A1F-49FE-BC6C-C0354B09F632}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Hackovic.VisualStudio</RootNamespace>
-    <AssemblyName>DataSetVisualizer</AssemblyName>
+    <RootNamespace>NumberVisualizer</RootNamespace>
+    <AssemblyName>NumberVisualizer</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -35,7 +35,7 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>DataSetVisualizer.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>NumberVisualizer.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.VisualStudio.DebuggerVisualizers, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
@@ -45,38 +45,27 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataSetForm.cs">
+    <Compile Include="IntVisualizer.cs" />
+    <Compile Include="NumberForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DataSetForm.Designer.cs">
-      <DependentUpon>DataSetForm.cs</DependentUpon>
+    <Compile Include="NumberForm.Designer.cs">
+      <DependentUpon>NumberForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="DataSetVisualizer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="DataSetForm.resx">
-      <DependentUpon>DataSetForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    <EmbeddedResource Include="NumberForm.resx">
+      <DependentUpon>NumberForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="DataSetVisualizer.snk" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\DataSetVizIcon.ico" />
+    <None Include="NumberVisualizer.snk" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

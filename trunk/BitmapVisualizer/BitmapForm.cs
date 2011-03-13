@@ -3,7 +3,7 @@ using System.Drawing;
 using System.Windows.Forms;
 
 
-namespace BitmapVisualizer
+namespace Hackovic.VisualStudio
 {
     public partial class BitmapForm : Form
     {

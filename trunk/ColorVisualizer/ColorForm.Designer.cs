@@ -1,4 +1,4 @@
-﻿namespace ColorVisualizer
+﻿namespace Hackovic.VisualStudio
 {
 	partial class ColorForm
 	{
