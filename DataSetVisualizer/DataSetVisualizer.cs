@@ -1,32 +1,38 @@
 ﻿using System;
 using System.Data;
 using System.Windows.Forms;
+using Hackovic.VisualStudio;
 using Microsoft.VisualStudio.DebuggerVisualizers;
 
 [assembly: System.Diagnostics.DebuggerVisualizer(
-    typeof(DataSetVisualizer.DataSetVisualizer),
-    typeof(DataSetVisualizer.DataSetVisualizerObjectSource),
+    typeof( DataSetVisualizer ),
+    typeof( DataSetVisualizerObjectSource ),
     Target = typeof(DataSet),
     Description = "DataSet Save visualizer")]
-namespace DataSetVisualizer
+
+namespace Hackovic.VisualStudio
 {
     public class DataSetVisualizer: DialogDebuggerVisualizer
     {
-        protected override void Show(IDialogVisualizerService windowService, IVisualizerObjectProvider objectProvider)
+      protected override void Show( IDialogVisualizerService windowService, IVisualizerObjectProvider objectProvider )
+      {
+        try
         {
-            try
-            {
-                DataSet wrapper = (DataSet)objectProvider.GetObject();
-                DataSetForm frm = new DataSetForm { DataSet = wrapper };
-                frm.ShowDialog();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, GetType().ToString());
-            }
+          DataSet wrapper = (DataSet) objectProvider.GetObject();
+          DataSetForm frm = new DataSetForm
+                              {
+                                DataSet = wrapper
+                              };
+          frm.InitForm();
+          frm.ShowDialog();
         }
+        catch (Exception ex)
+        {
+          MessageBox.Show(ex.Message, GetType().ToString());
+        }
+      }
 
-        /// <summary>
+      /// <summary>
         /// Tests the visualizer by hosting it outside of the debugger.
         /// </summary>
         /// <param name="objectToVisualize">The object to display in the visualizer.</param>

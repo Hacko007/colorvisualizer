@@ -1,4 +1,4 @@
-﻿namespace BitmapVisualizer
+﻿namespace Hackovic.VisualStudio
 {
     partial class BitmapForm
     {

@@ -1,16 +1,17 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using Hackovic.VisualStudio;
 using Microsoft.VisualStudio.DebuggerVisualizers;
 
 
 [assembly: System.Diagnostics.DebuggerVisualizer(
-	typeof(ColorVisualizer.ColorVisualizer),
-	typeof(ColorVisualizer.ColorVisualizerObjectSource),
+  typeof( ColorVisualizer ),
+  typeof( ColorVisualizerObjectSource ),
 	Target = typeof(Color),
 	Description = "Color visualizer")]
 
-namespace ColorVisualizer
+namespace Hackovic.VisualStudio
 {
 	public class ColorVisualizer : DialogDebuggerVisualizer
 	{

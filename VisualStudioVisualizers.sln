@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorVisualizer", "ColorVisualizer\ColorVisualizer.csproj", "{0EBAEC2C-F213-4517-B075-D2298D3A68DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestColorVisualizer", "TestColorVisualizer\TestColorVisualizer.csproj", "{459682C6-1D9B-461B-ADB1-21F078AEC1C1}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitmapVisualizer", "BitmapVisualizer\BitmapVisualizer.csproj", "{75B70CFA-0BE6-48AC-9A50-B05019BF2EDE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataSetVisualizer", "DataSetVisualizer\DataSetVisualizer.csproj", "{02B37562-BE88-43BB-BBA8-86ACC1AE4DDE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestVSVisualizers", "TestColorVisualizer\TestVSVisualizers.csproj", "{459682C6-1D9B-461B-ADB1-21F078AEC1C1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hackovic", "Hackovic", "{E08D1414-1212-4CA4-B20D-99FD7EAF9951}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VisualStudio", "VisualStudio", "{8022670E-FD94-4D58-A15E-57FDD55AFF8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberVisualizer", "NumberVisualizer\NumberVisualizer.csproj", "{0C60BB08-0A1F-49FE-BC6C-C0354B09F632}"
+EndProject
 Global
-	GlobalSection(SubversionScc) = preSolution
-		Svn-Managed = True
-		Manager = AnkhSVN - Subversion Support for Visual Studio
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -23,10 +25,6 @@ Global
 		{0EBAEC2C-F213-4517-B075-D2298D3A68DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0EBAEC2C-F213-4517-B075-D2298D3A68DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0EBAEC2C-F213-4517-B075-D2298D3A68DD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{459682C6-1D9B-461B-ADB1-21F078AEC1C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{459682C6-1D9B-461B-ADB1-21F078AEC1C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{459682C6-1D9B-461B-ADB1-21F078AEC1C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{459682C6-1D9B-461B-ADB1-21F078AEC1C1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{75B70CFA-0BE6-48AC-9A50-B05019BF2EDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{75B70CFA-0BE6-48AC-9A50-B05019BF2EDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75B70CFA-0BE6-48AC-9A50-B05019BF2EDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -35,8 +33,27 @@ Global
 		{02B37562-BE88-43BB-BBA8-86ACC1AE4DDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02B37562-BE88-43BB-BBA8-86ACC1AE4DDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02B37562-BE88-43BB-BBA8-86ACC1AE4DDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{459682C6-1D9B-461B-ADB1-21F078AEC1C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{459682C6-1D9B-461B-ADB1-21F078AEC1C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{459682C6-1D9B-461B-ADB1-21F078AEC1C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{459682C6-1D9B-461B-ADB1-21F078AEC1C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C60BB08-0A1F-49FE-BC6C-C0354B09F632}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C60BB08-0A1F-49FE-BC6C-C0354B09F632}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C60BB08-0A1F-49FE-BC6C-C0354B09F632}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C60BB08-0A1F-49FE-BC6C-C0354B09F632}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8022670E-FD94-4D58-A15E-57FDD55AFF8A} = {E08D1414-1212-4CA4-B20D-99FD7EAF9951}
+		{02B37562-BE88-43BB-BBA8-86ACC1AE4DDE} = {8022670E-FD94-4D58-A15E-57FDD55AFF8A}
+		{0EBAEC2C-F213-4517-B075-D2298D3A68DD} = {8022670E-FD94-4D58-A15E-57FDD55AFF8A}
+		{75B70CFA-0BE6-48AC-9A50-B05019BF2EDE} = {8022670E-FD94-4D58-A15E-57FDD55AFF8A}
+		{0C60BB08-0A1F-49FE-BC6C-C0354B09F632} = {8022670E-FD94-4D58-A15E-57FDD55AFF8A}
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
 	EndGlobalSection
 EndGlobal

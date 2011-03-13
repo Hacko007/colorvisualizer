@@ -1,15 +1,16 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using Hackovic.VisualStudio;
 using Microsoft.VisualStudio.DebuggerVisualizers;
 
 [assembly: System.Diagnostics.DebuggerVisualizer(
-    typeof(BitmapVisualizer.BitmapVisualizer),
-    typeof(BitmapVisualizer.ImageVisualizerObjectSource),
+    typeof( BitmapVisualizer ),
+    typeof( ImageVisualizerObjectSource ),
     Target = typeof(Image),
     Description = "Bitmap visualizer")]
 
-namespace BitmapVisualizer
+namespace Hackovic.VisualStudio
 {
     public class BitmapVisualizer : DialogDebuggerVisualizer
     {
