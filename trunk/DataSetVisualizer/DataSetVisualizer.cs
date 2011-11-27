@@ -8,7 +8,7 @@ using Microsoft.VisualStudio.DebuggerVisualizers;
     typeof( DataSetVisualizer ),
     typeof( DataSetVisualizerObjectSource ),
     Target = typeof(DataSet),
-    Description = "DataSet Save visualizer")]
+    Description = "DataSet Save Visualizer")]
 
 namespace Hackovic.VisualStudio
 {
@@ -53,4 +53,6 @@ namespace Hackovic.VisualStudio
         }
 
     }
+
+ 
 }
