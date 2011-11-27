@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="RowDataSet" targetNamespace="http://tempuri.org/RowDataSet.xsd" xmlns:mstns="http://tempuri.org/RowDataSet.xsd" xmlns="http://tempuri.org/RowDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="RowDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="RowDataSet" msprop:Generator_UserDSName="RowDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CellInfo" msprop:Generator_TableClassName="CellInfoDataTable" msprop:Generator_TableVarName="tableCellInfo" msprop:Generator_TablePropName="CellInfo" msprop:Generator_RowDeletingName="CellInfoRowDeleting" msprop:Generator_UserTableName="CellInfo" msprop:Generator_RowChangingName="CellInfoRowChanging" msprop:Generator_RowEvHandlerName="CellInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="CellInfoRowDeleted" msprop:Generator_RowEvArgName="CellInfoRowChangeEvent" msprop:Generator_RowChangedName="CellInfoRowChanged" msprop:Generator_RowClassName="CellInfoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Value" msdata:DataType="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columnValue" msprop:Generator_ColumnPropNameInRow="Value" msprop:Generator_ColumnPropNameInTable="ValueColumn" msprop:Generator_UserColumnName="Value" type="xs:anyType" minOccurs="0" />
+              <xs:element name="ColumnIndex" msprop:Generator_ColumnVarNameInTable="columnColumnIndex" msprop:Generator_ColumnPropNameInRow="ColumnIndex" msprop:Generator_ColumnPropNameInTable="ColumnIndexColumn" msprop:Generator_UserColumnName="ColumnIndex" type="xs:int" minOccurs="0" />
+              <xs:element name="HeaderName" msprop:Generator_ColumnVarNameInTable="columnHeaderName" msprop:Generator_ColumnPropNameInRow="HeaderName" msprop:Generator_ColumnPropNameInTable="HeaderNameColumn" msprop:Generator_UserColumnName="HeaderName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
