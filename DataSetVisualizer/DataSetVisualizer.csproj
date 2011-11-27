@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Hackovic.VisualStudio</RootNamespace>
     <AssemblyName>DataSetVisualizer</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -26,7 +26,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\Dlls\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -49,6 +49,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataGridViewRowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataGridViewRowForm.Designer.cs">
+      <DependentUpon>DataGridViewRowForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataGridViewRowVisualizer.cs" />
+    <Compile Include="DataRowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataRowForm.Designer.cs">
+      <DependentUpon>DataRowForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataRowVisualizer.cs" />
     <Compile Include="DataSetForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -56,14 +70,31 @@
       <DependentUpon>DataSetForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DataSetVisualizer.cs" />
+    <Compile Include="DataTableVisualizer.cs" />
+    <Compile Include="FilterCondition.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="RowDataSet.cs">
+      <DependentUpon>RowDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RowDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RowDataSet.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="DataGridViewRowForm.resx">
+      <DependentUpon>DataGridViewRowForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataRowForm.resx">
+      <DependentUpon>DataRowForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DataSetForm.resx">
       <DependentUpon>DataSetForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -74,9 +105,23 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="DataSetVisualizer.snk" />
+    <None Include="RowDataSet.xsc">
+      <DependentUpon>RowDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RowDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RowDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="RowDataSet.xss">
+      <DependentUpon>RowDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\DataSetVizIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1321282734_database.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
